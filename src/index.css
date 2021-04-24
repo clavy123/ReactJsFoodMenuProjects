@@ -1,0 +1,84 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+.header{
+  text-align: center;
+}
+.container{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.dish{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:1em;
+}
+
+.list{
+  width:150px;
+  height:200px;
+  border-radius:10px;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.3s;
+  
+}
+.list p{
+  margin: 0;
+  font-size:15px;
+}
+.list span{
+  font-size:15px;
+}
+.list img{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin: 3px;
+}
+.recipe{
+  overflow-y: scroll;
+  margin:5px;
+  position: relative;
+  top:30px;
+  visibility: hidden;
+  transition: 0.3s;
+ 
+}
+.list:hover .recipe{
+  visibility: visible;
+  top:0;
+}
+.input-tag{
+  margin: 12px;
+}
+.input-tag input{
+  height: 30px;
+  text-align: center;
+  outline: none;
+  border: transparent;
+  border: 2px solid bisque;
+  border-radius: 10px;
+  width: 200px;
+}
+.input-tag button{
+  height:26px;
+  width:100px;
+  outline: none;
+  border: transparent;
+  color: rgb(212, 245, 245);
+  background-color: aqua;
+  font-size:20px;
+  border-radius: 10px;
+}
